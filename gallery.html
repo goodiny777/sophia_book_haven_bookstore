@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - Gallery</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Book Haven Logo" class="store-logo">
+            </div>
+            <div class="title">
+                <h1>Gallery</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <span class="material-icons cart-icon" id="view-cart-btn">shopping_cart</span>
+                <span class="material-icons">settings</span>
+            </div>
+        </header>
+        
+        <!-- Gallery Introduction -->
+        <section class="gallery-intro">
+            <h2>Our Collection</h2>
+            <p>Browse our selection of books and literary treasures</p>
+            <button class="primary-button" id="view-cart-btn-top">View Shopping Cart</button>
+        </section>
+        
+        <!-- Gallery Items Table -->
+        <section class="gallery-items">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fiction">Fiction</button>
+                <button class="filter-btn" data-filter="nonfiction">Non-Fiction</button>
+                <button class="filter-btn" data-filter="childrens">Children's</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+            
+            <div class="items-table">
+                <div class="item-row item-header">
+                    <div class="item-cell">Image</div>
+                    <div class="item-cell">Title</div>
+                    <div class="item-cell">Description</div>
+                    <div class="item-cell">Price</div>
+                    <div class="item-cell">Action</div>
+                </div>
+                
+                <!-- Item 1 -->
+                <div class="item-row" data-category="fiction">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Book1.png" alt="The Great Adventure">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>The Great Adventure</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>A thrilling novel about exploration and discovery</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$19.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="1" data-name="The Great Adventure" data-price="19.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="item-row" data-category="nonfiction">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Book2.png" alt="History of Everything">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>History of Everything</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>A comprehensive look at world history</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$24.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="2" data-name="History of Everything" data-price="24.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="item-row" data-category="childrens">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Book3.png" alt="Magic Forest">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Magic Forest</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>A delightful children's tale of wonder and magic</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$14.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="3" data-name="Magic Forest" data-price="14.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="item-row" data-category="accessories">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Notebook.png" alt="Vintage Notebook">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Vintage Notebook</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>High-quality notebook with premium paper</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$12.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="4" data-name="Vintage Notebook" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="item-row" data-category="accessories">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_ToteBag.png" alt="Book Lover Tote Bag">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Book Lover Tote Bag</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>Sturdy canvas tote bag for carrying your favorite books</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$15.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="5" data-name="Book Lover Tote Bag" data-price="15.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 6 -->
+                <div class="item-row" data-category="accessories">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Stickers.png" alt="Bookish Sticker Pack">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Bookish Sticker Pack</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>Set of 10 literary-themed stickers</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$8.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="6" data-name="Bookish Sticker Pack" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 7 -->
+                <div class="item-row" data-category="nonfiction">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Magazine1.png" alt="Literary Review">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Literary Review</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>Monthly magazine with book reviews and author interviews</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$6.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="7" data-name="Literary Review" data-price="6.99">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Item 8 -->
+                <div class="item-row" data-category="nonfiction">
+                    <div class="item-cell">
+                        <div class="item-image">
+                            <img src="assets/Client3_Magazine2.png" alt="Writer's Guide">
+                        </div>
+                    </div>
+                    <div class="item-cell">
+                        <h3>Writer's Guide</h3>
+                    </div>
+                    <div class="item-cell">
+                        <p>A comprehensive guide for aspiring authors</p>
+                    </div>
+                    <div class="item-cell">
+                        <p class="price">$7.99</p>
+                    </div>
+                    <div class="item-cell">
+                        <button class="add-to-cart-btn" data-id="8" data-name="Writer's Guide" data-price="7.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Shopping Cart Modal -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Shopping Cart</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div id="cart-total">
+                        <p>Total: $<span id="total-amount">0.00</span></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="clear-cart-btn" class="secondary-button">Clear Cart</button>
+                    <button id="process-order-btn" class="primary-button">Process Order</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Book Haven Logo" class="footer-logo-img">
+                    <h3>Book Haven Bookstore</h3>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Newsletter</h3>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" class="primary-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">thumb_up</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">chat</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!-- Mobile Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <span class="material-icons">home</span>
+                <span class="label">Home</span>
+            </a>
+            <a href="gallery.html" class="nav-item active">
+                <span class="material-icons">collections</span>
+                <span class="label">Gallery</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <span class="material-icons">info</span>
+                <span class="label">About</span>
+            </a>
+            <a href="events.html" class="nav-item">
+                <span class="material-icons">event</span>
+                <span class="label">Events</span>
+            </a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

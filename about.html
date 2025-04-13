@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - About Us</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Book Haven Logo" class="store-logo">
+            </div>
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <span class="material-icons">notifications</span>
+                <span class="material-icons">settings</span>
+            </div>
+        </header>
+        
+        <!-- About Us Content -->
+        <section class="about-content">
+            <div class="about-image">
+                <img src="assets/Client3_Book2.png" alt="Book Haven Store">
+            </div>
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, we are embarking on the creation of an online presence that mirrors our dedication to the world of words.</p>
+                <p>Serving a broad audience of book lovers and knowledge seekers, our central goal is to amplify our visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Our target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials.</p>
+                <p>At Book Haven, we believe that books have the power to educate, inspire, and transform lives. Our knowledgeable staff members are avid readers themselves, always ready to offer personalized recommendations based on your interests.</p>
+                <p>Our website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth. Beyond being just a bookstore, we're a community hub for literary events, book clubs, author signings, and children's reading hours.</p>
+                
+                <div class="business-hours">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li><span>Monday - Friday:</span> 9:00 AM - 8:00 PM</li>
+                        <li><span>Saturday:</span> 10:00 AM - 6:00 PM</li>
+                        <li><span>Sunday:</span> 11:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Team Section -->
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h3>James Miller</h3>
+                    <p>Founder & Owner</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h3>Sarah Johnson</h3>
+                    <p>Literary Events Coordinator</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h3>Michael Thompson</h3>
+                    <p>Children's Literature Specialist</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h3>Jessica Williams</h3>
+                    <p>Fiction Department Manager</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Feedback Form -->
+        <section class="feedback-section">
+            <h2>Tell Us What You Think</h2>
+            <p>We value your feedback and would love to hear about your experience with us. Fill out the form below to share your thoughts or request a special order.</p>
+            
+            <form id="feedback-form" class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="feedback">General Feedback</option>
+                        <option value="special-order">Special Order Request</option>
+                        <option value="suggestion">Book Suggestion</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div id="special-order-fields" class="hidden">
+                    <h3>Special Order Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="book-type">Book Category</label>
+                            <select id="book-type" name="book-type">
+                                <option value="fiction">Fiction</option>
+                                <option value="nonfiction">Non-Fiction</option>
+                                <option value="childrens">Children's</option>
+                                <option value="rare">Rare/Collector's</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">Urgency</label>
+                            <select id="urgency" name="urgency">
+                                <option value="standard">Standard (1-2 weeks)</option>
+                                <option value="rush">Rush (3-5 days)</option>
+                                <option value="urgent">Urgent (1-2 days)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="book-details">Book Details</label>
+                        <textarea id="book-details" name="book-details" rows="3" placeholder="Title, Author, ISBN (if known), Edition, etc."></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <span class="checkmark"></span>
+                        Subscribe to our newsletter
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="reset" class="secondary-button">Clear</button>
+                    <button type="submit" class="primary-button">Submit</button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Book Haven Logo" class="footer-logo-img">
+                    <h3>Book Haven Bookstore</h3>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Newsletter</h3>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" class="primary-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">thumb_up</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">chat</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <span class="material-icons">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Book Haven Bookstore. All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!-- Mobile Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <span class="material-icons">home</span>
+                <span class="label">Home</span>
+            </a>
+            <a href="gallery.html" class="nav-item">
+                <span class="material-icons">collections</span>
+                <span class="label">Gallery</span>
+            </a>
+            <a href="about.html" class="nav-item active">
+                <span class="material-icons">info</span>
+                <span class="label">About</span>
+            </a>
+            <a href="events.html" class="nav-item">
+                <span class="material-icons">event</span>
+                <span class="label">Events</span>
+            </a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
