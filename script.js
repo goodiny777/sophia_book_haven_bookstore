@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Shopping Cart Functionality
     let cart = [];
     
-    // Load cart from localStorage if available
-    if (localStorage.getItem('bookHavenCart')) {
-        cart = JSON.parse(localStorage.getItem('bookHavenCart'));
+    // Load cart from sessionStorage if available
+    if (sessionStorage.getItem('bookHavenCart')) {
+        cart = JSON.parse(sessionStorage.getItem('bookHavenCart'));
     }
     
     // Cart buttons
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Save cart to localStorage
     function saveCart() {
-        localStorage.setItem('bookHavenCart', JSON.stringify(cart));
+        sessionStorage.setItem('bookHavenCart', JSON.stringify(cart));
     }
     
     // Clear cart
